@@ -1,4 +1,4 @@
-# Vocab explo
+# Vocab Explorer
 
 Extension to VS Code which helps you to manage the vocabulary used in the project.
 
