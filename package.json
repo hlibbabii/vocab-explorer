@@ -25,22 +25,26 @@
 					"contextualTitle": "Vocabulary"
 				}
 			]
-		}, "commands": [
-			{
-                "command": "vocab-explorer.refreshEntry",
-                "title": "Refresh1",
-                "icon": {
-                    "light": "resources/media/refresh.svg",
-                    "dark": "resources/media/refresh.svg"
-                }
-            }
-		], "menus": {"view/title": [
+		},
+		"commands": [
 			{
 				"command": "vocab-explorer.refreshEntry",
-				"when": "view == vocabulary",
-				"group": "navigation"
+				"title": "Refresh1",
+				"icon": {
+					"light": "resources/media/refresh.svg",
+					"dark": "resources/media/refresh.svg"
+				}
 			}
-  ]}
+		],
+		"menus": {
+			"view/title": [
+				{
+					"command": "vocab-explorer.refreshEntry",
+					"when": "view == vocabulary",
+					"group": "navigation"
+				}
+			]
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
@@ -51,7 +55,7 @@
 		"test": "node ./out/test/runTest.js"
 	},
 	"dependencies": {
-		"js-tokens": "^6.0.0",
+		"js-tokens": "^7.0.0",
 		"yarn": "^1.22.5"
 	},
 	"devDependencies": {
